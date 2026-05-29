@@ -1,4 +1,4 @@
-combustivel = 110
+combustivel = 100
 tripulantes = []
 
 ##definir funçoes
@@ -14,7 +14,7 @@ def viajar():
 
 def abastecer():
     global combustivel
-    combustivel = 110
+    combustivel = 100
     print("Você está com tanque cheio⛽")
 
 def status_nave():
