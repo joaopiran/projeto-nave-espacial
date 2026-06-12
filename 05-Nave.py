@@ -6,11 +6,14 @@ tripulantes = []
 def viajar():
     ##codigo gastar combustivel
     global combustivel ## avisa a funçao que vamos modificar a variavel externa
-    if (combustivel >=30):
-        combustivel = combustivel - 30
-        print("a nave viajou")
+    if(len(tripulantes)==0):
+        print("Não há tripulantes.Adicione")
     else:
-        print("Você está sem combustivel")
+        if (combustivel >=30):
+            combustivel = combustivel - 30
+            print("a nave viajou")
+        else:
+            print("Você está sem combustivel")
 
 def abastecer():
     global combustivel
@@ -38,6 +41,11 @@ def tirartrip():
         tripulantes.pop()
         print(tripulantes)
 
+
+
+
+
+    
 ##Cria um menu
 
 print("Bem vindo ao menu interativo da nave. Por favor selecione uma opção:")
