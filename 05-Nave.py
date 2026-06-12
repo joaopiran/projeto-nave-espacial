@@ -14,11 +14,13 @@ def viajar():
             print("a nave viajou")
         else:
             print("Você está sem combustivel")
+    travarmenu()
 
 def abastecer():
     global combustivel
     combustivel = 100
     print("Você está com tanque cheio⛽")
+    travarmenu()
 
 def status_nave():
     ##mostra a quantidade de tripulantes e combustivel
@@ -26,11 +28,13 @@ def status_nave():
     print(f"temos {combustivel} de combustivel")
     print(f"Os tripulantes sao: {tripulantes}")
     print("\n---------------------------------")
+    travarmenu()
 
 def registrartripulante():
     novotripulante = input("qual o nome dos tripulantes?:")
     tripulantes.append(novotripulante)
     print("Tripulante inserido com sucesso")
+    travarmenu()
 
 
 
@@ -40,11 +44,16 @@ def tirartrip():
     else:
         tripulantes.pop()
         print(tripulantes)
+    travarmenu()
+    
 
 
 
 
+## cfiar funçao funçao para para o codigo entre as interaçoes do usuario
 
+def travarmenu():
+    input("\npressione <ENTER> para continuar...")
     
 ##Cria um menu
 
